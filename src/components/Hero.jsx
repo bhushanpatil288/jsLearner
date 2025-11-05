@@ -1,4 +1,4 @@
-import jsLogo from '../constants'
+import {jsLogo} from '../constants'
 
 const Hero = () => {
   return (

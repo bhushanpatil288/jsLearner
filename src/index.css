@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+pre {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    overflow-x: auto; /* Adds horizontal scroll for long lines */
+}
+code {
+    font-family: monospace;
+    color: #333;
+}

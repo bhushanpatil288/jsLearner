@@ -1,7 +1,5 @@
 import { useState } from 'react'
-import { Menu } from '../constants'
-import jsLogo from '../constants'
-
+import { Menu, jsLogo } from '../constants'
 
 const Navbar = () => {
 
