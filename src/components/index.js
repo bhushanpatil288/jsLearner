@@ -1,4 +1,7 @@
 import Navbar from './Navbar'
 import Hero from './Hero'
+import Main from './Main'
 
-export { Navbar, Hero }
+import Modal from './Modal'
+
+export { Navbar, Hero, Main, Modal }
