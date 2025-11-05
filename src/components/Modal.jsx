@@ -2,7 +2,7 @@
 const Modal = ({id, image, name, title, description, codeSnippet}) => {
   return (
     <div>
-      <button command="show-modal" commandfor={id} className="rounded-md bg-gray-950/5 px-2.5 py-1.5 text-sm font-semibold text-gray-900 hover:bg-gray-950/10 w-full">{name}</button>
+      <button command="show-modal" commandfor={id} className="rounded-md bg-gray-950/5 py-1.5 text-sm font-semibold text-gray-900 hover:bg-gray-950/10 tet-start md:text-center px-5 md:px-2.5 w-full">{name}</button>
       <el-dialog>
         <dialog id={id} aria-labelledby="dialog-title" className="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent">
           <el-dialog-backdrop className="fixed inset-0 bg-gray-500/75 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"></el-dialog-backdrop>
@@ -28,7 +28,7 @@ const Modal = ({id, image, name, title, description, codeSnippet}) => {
                       {codeSnippet != '' ? (
                         <>
                           <p>Example</p>
-                          <pre className="overflow-x-auto whitespace-pre-wrap sm:whitespace-pre rounded-md bg-gray-100 p-2 border border-gray-200"><code>{codeSnippet}</code></pre>
+                          <pre className="overflow-x-auto whitespace-pre-wrap sm:whitespace-pre rounded-md bg-gray-100 p-2 border border-gray-200 text-start"><code>{codeSnippet}</code></pre>
                         </>
                       ): ''}
                     </div>
