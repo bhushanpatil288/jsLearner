@@ -1,12 +1,18 @@
 import { useState } from 'react'
 import { Menu } from '../constants'
+import jsLogo from '../constants'
+
+
 const Navbar = () => {
 
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <div className='mx-auto ng-red-500 flex justify-between px-5 bg-neutral-200 py-4 relative top-0 sticky'>
-      <div>Logo</div>
+    <div className='mx-auto ng-red-500 flex justify-between px-5 bg-neutral-200 relative top-0 sticky items-center'>
+      <div className='flex items-center gap-3'>
+        <img src={jsLogo} className='w-6 h-auto py-2' />
+        <p>JsLearner</p>
+      </div>
       <ul className='flex gap-5 hidden md:flex'>
         <li>Home</li>
         <li>Contact</li>
