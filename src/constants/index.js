@@ -422,7 +422,28 @@ higherOrder(sayHello); // Output: Hello!`
     codeSnippet: `(function() {
   console.log("This runs immediately!");
 })();`
+  },
+  {
+  id: 25,
+  image: jsLogo,
+  name: "25. Nested Functions",
+  title: "Nested Functions",
+  description: [
+    "A nested function is a function defined inside another function. The inner function has access to the variables and parameters of the outer function through a feature called closure.",
+    "Nested functions are useful for creating helper functions that are only relevant within a specific context, preventing unnecessary exposure to the global scope."
+  ],
+  codeSnippet: `function outerFunction(outerValue) {
+  function innerFunction(innerValue) {
+    console.log(\`Outer: \${outerValue}, Inner: \${innerValue}\`);
   }
+
+  innerFunction("Hello from Inner!");
+}
+
+outerFunction("Hello from Outer!");
+// Output: Outer: Hello from Outer!, Inner: Hello from Inner!`
+}
+
 ];
 
 
