@@ -160,7 +160,7 @@ const conditions = [
   {
     id: 10,
     image: jsLogo,
-    name: "10. if Statement",
+    name: "1. if Statement",
     title: "if Statement",
     description: [
       "The 'if' statement executes a block of code only if a specified condition is true. It’s the most basic form of decision-making in JavaScript."
@@ -174,7 +174,7 @@ if (age >= 18) {
   {
     id: 11,
     image: jsLogo,
-    name: "11. if-else Statement",
+    name: "2. if-else Statement",
     title: "if-else Statement",
     description: [
       "The 'if-else' statement provides two paths of execution — one when the condition is true and another when it’s false."
@@ -190,7 +190,7 @@ if (age >= 18) {
   {
     id: 12,
     image: jsLogo,
-    name: "12. if-else Ladder",
+    name: "3. if-else Ladder",
     title: "if-else Ladder",
     description: [
       "An 'if-else ladder' allows checking multiple conditions sequentially. As soon as one condition evaluates to true, the corresponding block executes."
@@ -210,7 +210,7 @@ if (marks >= 90) {
   {
     id: 13,
     image: jsLogo,
-    name: "13. Nested if-else",
+    name: "4. Nested if-else",
     title: "Nested if-else",
     description: [
       "A nested 'if-else' statement means having one or more 'if' statements inside another. It’s used when multiple layers of decisions are needed."
@@ -230,7 +230,7 @@ if (num > 0) {
   {
     id: 14,
     image: jsLogo,
-    name: "14. switch Case",
+    name: "5. switch Case",
     title: "switch Case",
     description: [
       "The 'switch' statement evaluates an expression and executes code based on matching 'case' labels. It’s often used as a cleaner alternative to long if-else ladders."
@@ -262,6 +262,170 @@ console.log(dayName); // Wednesday`
   }
 ]
 
+const functions = [
+  {
+    id: 15,
+    image: jsLogo,
+    name: "1. Introduction to Functions",
+    title: "Introduction to Functions",
+    description: [
+      "Functions in JavaScript are reusable blocks of code that perform a specific task. They help make your code modular, readable, and maintainable.",
+      "You can define a function once and use it multiple times with different inputs. Functions can take parameters (inputs) and return values (outputs)."
+    ],
+    codeSnippet: `function greet() {
+  console.log("Hello, world!");
+}
+
+greet(); // Output: Hello, world!`
+  },
+  {
+    id: 16,
+    image: jsLogo,
+    name: "2. Function Parameters and Arguments",
+    title: "Function Parameters and Arguments",
+    description: [
+      "Parameters are placeholders defined in the function declaration, and arguments are the actual values passed when calling the function.",
+      "You can define multiple parameters and pass values dynamically when invoking the function."
+    ],
+    codeSnippet: `function add(a, b) {
+  console.log(a + b);
+}
+
+add(5, 10); // Output: 15`
+  },
+  {
+    id: 17,
+    image: jsLogo,
+    name: "3. Return Statement",
+    title: "Return Statement",
+    description: [
+      "The 'return' statement allows a function to send a value back to where it was called.",
+      "Once a 'return' statement executes, the function stops running."
+    ],
+    codeSnippet: `function multiply(x, y) {
+  return x * y;
+}
+
+let result = multiply(4, 3);
+console.log(result); // Output: 12`
+  },
+  {
+    id: 18,
+    image: jsLogo,
+    name: "4. Function Expressions",
+    title: "Function Expressions",
+    description: [
+      "A function expression is when a function is assigned to a variable. It can be anonymous or named.",
+      "Unlike function declarations, function expressions are not hoisted — they must be defined before use."
+    ],
+    codeSnippet: `const greet = function(name) {
+  return \`Hello, \${name}!\`;
+};
+
+console.log(greet("Alice")); // Output: Hello, Alice!`
+  },
+  {
+    id: 19,
+    image: jsLogo,
+    name: "5. Arrow Functions",
+    title: "Arrow Functions",
+    description: [
+      "Arrow functions provide a shorter syntax for writing functions and automatically bind the 'this' keyword lexically.",
+      "They are especially useful for callbacks and inline functions."
+    ],
+    codeSnippet: `const square = (n) => n * n;
+
+console.log(square(5)); // Output: 25`
+  },
+  {
+    id: 20,
+    image: jsLogo,
+    name: "6. Default Parameters",
+    title: "Default Parameters",
+    description: [
+      "Default parameters allow you to set default values for function parameters in case no arguments are provided.",
+      "This helps prevent 'undefined' results and makes functions more robust."
+    ],
+    codeSnippet: `function greet(name = "Guest") {
+  console.log(\`Hello, \${name}!\`);
+}
+
+greet(); // Hello, Guest!
+greet("John"); // Hello, John!`
+  },
+  {
+    id: 21,
+    image: jsLogo,
+    name: "7. Rest Parameters",
+    title: "Rest Parameters",
+    description: [
+      "Rest parameters allow a function to accept an indefinite number of arguments as an array using the '...' syntax.",
+      "This is useful for handling variable-length argument lists."
+    ],
+    codeSnippet: `function sum(...numbers) {
+  return numbers.reduce((total, num) => total + num, 0);
+}
+
+console.log(sum(1, 2, 3, 4)); // Output: 10`
+  },
+  {
+    id: 22,
+    image: jsLogo,
+    name: "8. Callback Functions",
+    title: "Callback Functions",
+    description: [
+      "A callback function is a function passed as an argument to another function and executed later.",
+      "They are commonly used in asynchronous operations like event handling or API calls."
+    ],
+    codeSnippet: `function greetUser(name, callback) {
+  console.log("Hello, " + name);
+  callback();
+}
+
+function sayBye() {
+  console.log("Goodbye!");
+}
+
+greetUser("Alice", sayBye);
+// Output:
+// Hello, Alice
+// Goodbye!`
+  },
+  {
+    id: 23,
+    image: jsLogo,
+    name: "9. Higher-Order Functions",
+    title: "Higher-Order Functions",
+    description: [
+      "A higher-order function is a function that either takes another function as an argument or returns one.",
+      "These are powerful tools in JavaScript for functional programming patterns."
+    ],
+    codeSnippet: `function higherOrder(fn) {
+  fn();
+}
+
+function sayHello() {
+  console.log("Hello!");
+}
+
+higherOrder(sayHello); // Output: Hello!`
+  },
+  {
+    id: 24,
+    image: jsLogo,
+    name: "10. Anonymous Functions and IIFE",
+    title: "Anonymous Functions and IIFE",
+    description: [
+      "Anonymous functions have no name and are often used in places where functions are used only once.",
+      "IIFE (Immediately Invoked Function Expressions) are anonymous functions that execute immediately after being defined."
+    ],
+    codeSnippet: `(function() {
+  console.log("This runs immediately!");
+})();`
+  }
+];
 
 
-export { Menu, jsLogo, basics, conditions }
+
+
+export { Menu, jsLogo, basics, conditions, functions }

@@ -1,4 +1,4 @@
-import { basics, conditions } from '../constants'
+import { basics, conditions, functions } from '../constants'
 import {SectionGenerator} from './main-components/'
 
 const Main = () => {
@@ -9,6 +9,8 @@ const Main = () => {
        <SectionGenerator sectionName="Basics"  data={basics}/>
 
        <SectionGenerator sectionName="Conditions" data={conditions}/>
+       
+       <SectionGenerator sectionName="Functions" data={functions}/>
 
       </div>
     </section>
