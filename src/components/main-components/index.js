@@ -1,3 +1,3 @@
-import Basics from "./Basics";
+import SectionGenerator from "./SectionGenerator";
 
-export { Basics }
+export { SectionGenerator }

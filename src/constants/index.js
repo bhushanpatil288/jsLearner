@@ -6,6 +6,7 @@ import jsLogo from '../assets/jsLogo.png'
 
 const basics = [
   {
+    id: 1,
     image: jsLogo,
     name: "1. Introduction to JavaScript",
     title: "Introduction to JavaScript",
@@ -16,6 +17,7 @@ const basics = [
     codeSnippet: '',
   },
   {
+    id: 2,
     image: jsLogo,
     name: "1. Introduction to JavaScript Operators",
     title: "Introduction to JavaScript Operators",
@@ -30,6 +32,7 @@ let sum = a + b; // 15
 console.log(sum);`
   },
   {
+    id: 3,
     image: jsLogo,
     name: "2. Arithmetic Operators",
     title: "Arithmetic Operators",
@@ -52,6 +55,7 @@ y--;
 console.log(y);      // 2 (Decrement)`
   },
   {
+    id: 4,
     image: jsLogo,
     name: "3. Assignment Operators",
     title: "Assignment Operators",
@@ -68,6 +72,7 @@ num *= 2;  // Equivalent to num = num * 2
 console.log(num);  // 30`
   },
   {
+    id: 5,
     image: jsLogo,
     name: "4. Comparison Operators",
     title: "Comparison Operators",
@@ -87,6 +92,7 @@ console.log(a > 3);    // true
 console.log(a <= 5);   // true`
   },
   {
+    id: 6,
     image: jsLogo,
     name: "5. Logical Operators",
     title: "Logical Operators",
@@ -103,6 +109,7 @@ console.log(isAdult || hasID); // true (at least one is true)
 console.log(!isAdult);         // false (negates the value)`
   },
   {
+    id: 7,
     image: jsLogo,
     name: "6. String Operators",
     title: "String Operators",
@@ -120,6 +127,7 @@ let greeting = \`Hello, \${firstName}!\`;
 console.log(greeting); // Hello, John!`
   },
   {
+    id: 8,
     image: jsLogo,
     name: "7. Ternary Operator",
     title: "Ternary Operator",
@@ -132,6 +140,7 @@ let message = age >= 18 ? 'You are an adult.' : 'You are a minor.';
 console.log(message); // You are an adult.`
   },
   {
+    id: 9,
     image: jsLogo,
     name: "8. Type Operators",
     title: "Type Operators",
@@ -145,8 +154,114 @@ console.log(typeof name); // string
 let date = new Date();
 console.log(date instanceof Date); // true`
   }
+]
 
+const conditions = [
+  {
+    id: 10,
+    image: jsLogo,
+    name: "10. if Statement",
+    title: "if Statement",
+    description: [
+      "The 'if' statement executes a block of code only if a specified condition is true. It’s the most basic form of decision-making in JavaScript."
+    ],
+    codeSnippet: `let age = 18;
+
+if (age >= 18) {
+  console.log("You are eligible to vote.");
+}`
+  },
+  {
+    id: 11,
+    image: jsLogo,
+    name: "11. if-else Statement",
+    title: "if-else Statement",
+    description: [
+      "The 'if-else' statement provides two paths of execution — one when the condition is true and another when it’s false."
+    ],
+    codeSnippet: `let age = 16;
+
+if (age >= 18) {
+  console.log("You are an adult.");
+} else {
+  console.log("You are a minor.");
+}`
+  },
+  {
+    id: 12,
+    image: jsLogo,
+    name: "12. if-else Ladder",
+    title: "if-else Ladder",
+    description: [
+      "An 'if-else ladder' allows checking multiple conditions sequentially. As soon as one condition evaluates to true, the corresponding block executes."
+    ],
+    codeSnippet: `let marks = 85;
+
+if (marks >= 90) {
+  console.log("Grade A");
+} else if (marks >= 75) {
+  console.log("Grade B");
+} else if (marks >= 60) {
+  console.log("Grade C");
+} else {
+  console.log("Fail");
+}`
+  },
+  {
+    id: 13,
+    image: jsLogo,
+    name: "13. Nested if-else",
+    title: "Nested if-else",
+    description: [
+      "A nested 'if-else' statement means having one or more 'if' statements inside another. It’s used when multiple layers of decisions are needed."
+    ],
+    codeSnippet: `let num = 10;
+
+if (num > 0) {
+  if (num % 2 === 0) {
+    console.log("The number is positive and even.");
+  } else {
+    console.log("The number is positive but odd.");
+  }
+} else {
+  console.log("The number is negative or zero.");
+}`
+  },
+  {
+    id: 14,
+    image: jsLogo,
+    name: "14. switch Case",
+    title: "switch Case",
+    description: [
+      "The 'switch' statement evaluates an expression and executes code based on matching 'case' labels. It’s often used as a cleaner alternative to long if-else ladders."
+    ],
+    codeSnippet: `let day = 3;
+let dayName;
+
+switch (day) {
+  case 1:
+    dayName = "Monday";
+    break;
+  case 2:
+    dayName = "Tuesday";
+    break;
+  case 3:
+    dayName = "Wednesday";
+    break;
+  case 4:
+    dayName = "Thursday";
+    break;
+  case 5:
+    dayName = "Friday";
+    break;
+  default:
+    dayName = "Weekend";
+}
+
+console.log(dayName); // Wednesday`
+  }
 ]
 
 
-export { Menu, jsLogo, basics }
+
+export { Menu, jsLogo, basics, conditions }

@@ -23,7 +23,7 @@ const Navbar = () => {
         className='md:hidden relative'>
         <Menu />
         { menuOpen && (
-        <ul className='absolute bg-neutral-300 p-5 top-14 fixed right-0 z-20 w-full'>
+        <ul className='absolute bg-neutral-300 p-5 top-10 fixed right-0 z-20 w-full'>
           <li>Home</li>
           <li>Contact</li>
           <li>About</li>
